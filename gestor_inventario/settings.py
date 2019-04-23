@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'gestor_inventario.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jdmclasic',
+        'NAME': 'gestor_inventario',
         'USER': 'postgres',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
+        'PASSWORD': '',
+        'HOST': 'local',
         'PORT': 5432,
     }
 }
