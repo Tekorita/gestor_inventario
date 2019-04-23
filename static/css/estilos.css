@@ -1,0 +1,178 @@
+
+.container-nav {
+	width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu-fixed {
+	position: fixed;
+	z-index: 1000;
+	top:0;
+	width: 100%;
+}
+
+
+
+/*@media only screen and (max-width: 992px) {
+   .redes-sociales {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }*/
+
+body {
+    background-color: #263238;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.logo {
+  opacity:0.9;
+}
+
+.container-redes {
+    display: inline-block;
+}
+
+.parallax-window1 {
+    min-height: 700px;
+    background: transparent;
+    padding-top: 10%;
+}
+
+.parallax-window2 {
+    min-height: 400px;
+    background: transparent;
+}
+
+.contenedor-formacion {
+    padding-top: 15px;
+}
+
+.container-redes {
+    padding-left: 20px;
+}
+
+.contenedor-logos {
+    padding-top: 40px;
+}
+
+.contenedor-refran {
+    padding-top: 120px;
+}
+
+.contenedor {
+    margin: auto;
+    display: table;
+}
+
+.contenedor h1 { 
+    position: relative; 
+    float: left;
+    background: tomato;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.contenedor h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: tomato;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+.logo-pais {
+    animation: logo-pais-spin infinite 5s linear;
+    pointer-events: none;
+}
+
+h1.big_white {
+    font-family: cursive;
+    color: #fff;
+  /*  font-size: 56px;*/
+    margin: 10px 15px;
+    text-transform: uppercase;
+    /*text-shadow: 1px 1px 1px #333;*/
+} 
+
+@keyframes logo-pais-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+
+.border-nav-1 {
+	border-bottom: 5px solid #ffd600;
+	line-height: 58px;
+}
+
+.border-nav-2 {
+	border-bottom: 5px solid #01579b;
+	line-height: 58px;
+}
+
+.border-nav-3 {
+	border-bottom: 5px solid #00c853;
+	line-height: 58px;
+}
+
+.border-nav-4 {
+	border-bottom: 5px solid #e65100;
+	line-height: 58px;
+}
+
+.border-nav-5 {
+	border-bottom: 5px solid #311b92;
+	line-height: 58px;
+}
+
+.border-nav-6 {
+	border-bottom: 5px solid #c62828;
+	line-height: 58px;
+}
+
+/*.eje {
+    font-size: 14.5px;
+    -moz-transition: font-size 200ms linear 0s; 
+    -webkit-transition: font-size 200ms linear 0s;
+    -o-transition: font-size 200ms linear 0s;
+    transition: font-size 200ms linear 0s;
+}*/
+
+.link:hover{
+    background-color:#006064;
+}
+.link-movil1:hover{
+    background-color:#fff59d;
+}
+.link-movil2:hover{
+    background-color:#81d4fa;
+}
+.link-movil3:hover{
+    background-color:#69f0ae;
+}
+.link-movil4:hover{
+    background-color:#ffe082;
+}
+.link-movil5:hover{
+    background-color:#9fa8da;
+}
+.link-movil6:hover{
+    background-color:#ef9a9a;
+}
