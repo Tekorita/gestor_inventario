@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.inventario',
     'apps.personal',
-    'apps.registros',
+    'apps.registro',
     'apps.usuario',
 ]
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'gestor_inventario.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
