@@ -8,4 +8,4 @@ class Personal(models.Model):
     cargo = models.CharField(max_length=50)
 
     def __str__(self): #esta funcion nos trae el valor del objeto en vez del nombre del objeto cuando es llave foranea o forekeing
-		return '{}'.format(self.nombre, self.apellido)
+        return '{} {}'.format(self.nombre, self.apellido)
