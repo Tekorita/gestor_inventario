@@ -3,13 +3,13 @@ from apps.inventario.models import Inventario
 from apps.personal.models import Personal
 # Create your models here.
 
-class Registro(models.model):
+class Registro(models.Model):
     personal = models.ForeignKey(Personal, null=True, blank=True, on_delete = models.CASCADE)
     insumo = models.ManyToManyField(Inventario, blank=True)
     cantidad = models.IntegerField()
     fecha = models.DateField()
 
-    
+
 
 
 
