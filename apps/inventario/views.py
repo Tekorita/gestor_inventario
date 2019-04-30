@@ -5,6 +5,8 @@ from apps.inventario.models import Inventario
 
 class InventarioList(ListView):
     model = Inventario
-    template_name = 'inventario/listar.html'
+    template_name = 'inventariosss/listar.html'
+
+
 
 
