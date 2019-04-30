@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<h1>hola {{ user.username }}</h1>
+<a href="{% url 'logout' %}">Cerrar Sesion</a>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Fecha de Ingreso</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if object_list %}
+        {% for inv in object_list %}
+        <tr>
+            <th scope="row">{{ inv.id }}</th>
+            <td>{{ inv.descripcion }}</td>
+            <td>{{ inv.cantidad }}</td>
+            <td>{{ inv.fecha_ingreso }}</td>
+            <td>
+                <a class = "btn btn-primary" href="{% url 'auto_editar' inv.id %}">Editar</a>
+                <a class = "btn btn-danger" href="{% url 'auto_eliminar' inv.id %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+		{% else %}
+			<h1>No hay registro de inventario</h1>
+		{% endif %}
+    </tbody>
+</table>
+{% else %}
+    <p>Por favor inicie sesión para ver esta página.</p>
+{% endif %}
+{% endblock %}
