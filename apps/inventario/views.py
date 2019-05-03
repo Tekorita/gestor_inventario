@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from apps.inventario.models import Inventario
+from apps.inventario.forms import InventarioForm
 # Create your views here.
 
 class InventarioList(ListView):
@@ -11,7 +13,7 @@ class InventarioCreate(CreateView):
     model = Inventario
     form_class = InventarioForm
     template_name = 'inventario/nuevo.html'
-    success_url = reverze_lazy('inventario_listar')
+    success_url = reverse_lazy('inventario_listar')
 
 
 
