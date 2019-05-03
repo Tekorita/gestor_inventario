@@ -7,6 +7,11 @@ class InventarioList(ListView):
     model = Inventario
     template_name = 'inventario/listar.html'
 
+class InventarioCreate(CreateView):
+    model = Inventario
+    form_class = InventarioForm
+    template_name = 'inventario/nuevo.html'
+    success_url = reverze_lazy('inventario_listar')
 
 
 
