@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = reverse_lazy('')
+LOGIN_REDIRECT_URL = reverse_lazy('inventario_listar')
 LOGOUT_URL = reverse_lazy('logout')
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
 EMAIL_USE_TLS = True
