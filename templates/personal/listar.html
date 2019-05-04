@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<h1>hola {{ user.username }}</h1>
+<a href="{% url 'logout' %}">Cerrar Sesion</a>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if object_list %}
+        {% for pers in object_list %}
+        <tr>
+            <th scope="row">{{ pers.id }}</th>
+            <td>{{ pers.Nombre }}</td>
+            <td>{{ pers.Apellido }}</td>
+            <td>{{ pers.Cargo }}</td>
+            <td>
+                <a class = "btn btn-primary" href="#">Editar</a>
+                <a class = "btn btn-danger" href="#">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+		{% else %}
+			<h1>No hay registro de Personal</h1>
+		{% endif %}
+    </tbody>
+</table>
+{% else %}
+    <p>Por favor inicie sesión para ver esta página.</p>
+{% endif %}
+{% endblock %}
