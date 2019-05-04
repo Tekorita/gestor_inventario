@@ -13,7 +13,7 @@ class PersonalList(ListView):
 class PersonalCreate(CreateView):
     model = Personal
     form_class = PersonalForm
-    template_name = 'pesonal/nuevo.html'
+    template_name = 'personal/nuevo.html'
     success_url = reverse_lazy('personal_listar')
 
 class PersonalUpdate(UpdateView):
@@ -21,5 +21,11 @@ class PersonalUpdate(UpdateView):
     form_class = PersonalForm
     template_name = 'personal/nuevo.html'
     success_url = reverse_lazy('personal_listar')
-    
+
+class PersonalDelete(DeleteView):
+    model = Personal
+    template_name = 'personal/eliminar.html'
+    success_url = reverse_lazy('personal_listar')
+
+
     

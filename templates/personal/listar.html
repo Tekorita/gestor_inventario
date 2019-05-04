@@ -20,12 +20,12 @@
         {% for pers in object_list %}
         <tr>
             <th scope="row">{{ pers.id }}</th>
-            <td>{{ pers.Nombre }}</td>
-            <td>{{ pers.Apellido }}</td>
-            <td>{{ pers.Cargo }}</td>
+            <td>{{ pers.nombre }}</td>
+            <td>{{ pers.apellido }}</td>
+            <td>{{ pers.cargo }}</td>
             <td>
-                <a class = "btn btn-primary" href="#">Editar</a>
-                <a class = "btn btn-danger" href="#">Eliminar</a>
+                <a class = "btn btn-primary" href="{% url 'personal_editar' pers.id %}">Editar</a>
+                <a class = "btn btn-danger" href="">Eliminar</a>
             </td>
         </tr>
         {% endfor %}
