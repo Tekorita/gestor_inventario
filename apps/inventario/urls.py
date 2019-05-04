@@ -4,6 +4,6 @@ from apps.inventario.views import InventarioList, InventarioCreate, InventarioUp
 urlpatterns = [
     path('listar', InventarioList.as_view(), name='inventario_listar'),
     path('nuevo', InventarioCreate.as_view(), name='inventario_nuevo'),
-    path('editar', InventarioUpdate.as_view(), name='inventario_editar'),
-    path('eliminar', InventarioDelete.as_view(), name='inventario_eliminar'),
+    path('editar/<pk>/', InventarioUpdate.as_view(), name='inventario_editar'),
+    path('eliminar/<pk>/', InventarioDelete.as_view(), name='inventario_eliminar'),
 ]
