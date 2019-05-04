@@ -21,7 +21,10 @@ class InventarioUpdate(UpdateView):
     template_name = 'inventario/nuevo.html'
     success_url = reverse_lazy('inventario_listar')
 
-
+class InventarioDelete(DeleteView):
+    model = Inventario
+    template_name = 'inventario/eliminar.html'
+    success_url = reverse_lazy('inventario_listar')
 
 
 
