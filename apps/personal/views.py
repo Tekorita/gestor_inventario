@@ -7,5 +7,5 @@ from django.urls import reverse_lazy, reverse
 
 class PersonalList(ListView):
     model = Personal
-    template_name = ''
+    template_name = 'personal/listar.html'
     
