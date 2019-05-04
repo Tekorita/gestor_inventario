@@ -15,4 +15,5 @@ class PersonalCreate(CreateView):
     form_class = PersonalForm
     template_name = 'pesonal/nuevo.html'
     success_url = reverse_lazy('personal_listar')
+
     
