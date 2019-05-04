@@ -15,5 +15,13 @@ class InventarioCreate(CreateView):
     template_name = 'inventario/nuevo.html'
     success_url = reverse_lazy('inventario_listar')
 
+class InventarioUpdate(UpdateView):
+    model = Inventario
+    form_class = InventarioForm
+    template_name = 'inventario/nuevo.html'
+    success_url = reverse_lazy('inventario_listar')
+
+
+
 
 
