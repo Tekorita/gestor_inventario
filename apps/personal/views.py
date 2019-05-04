@@ -16,4 +16,10 @@ class PersonalCreate(CreateView):
     template_name = 'pesonal/nuevo.html'
     success_url = reverse_lazy('personal_listar')
 
+class PersonalUpdate(UpdateView):
+    model = Personal
+    form_class = PersonalForm
+    template_name = 'personal/nuevo.html'
+    success_url = reverse_lazy('personal_listar')
+    
     
