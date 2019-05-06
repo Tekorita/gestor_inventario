@@ -17,6 +17,12 @@
         $('input#input_text, textarea#textarea2').characterCounter();
     });
 
+// Inicializamos el datepicker
+
+    $(document).ready(function(){
+        $('.datepicker').datepicker();
+    });
+
 
 
 	var TxtType = function(el, toRotate, period) {

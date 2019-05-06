@@ -18,5 +18,5 @@ class InventarioForm(forms.ModelForm):
         widgets = {
             'descripcion':forms.TextInput(attrs={'class':'form-control'}),
             'cantidad':forms.TextInput(attrs={'class':'form-control'}),
-            'fecha_ingreso':forms.TextInput(attrs={'class':'form-control'}),
+            'fecha_ingreso':forms.TextInput(attrs={'class':'datepicker'}),
         }
