@@ -5,4 +5,4 @@ from apps.registro.models import Registro
 
 class RegistroList(ListView):
     model = Registro
-    template_name = 'registro/listar.html'
+    template_name = ''
