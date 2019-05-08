@@ -12,17 +12,14 @@
 </head>
 <body>
     <header>
-        {% block navbar %}
-            {% if user.is_authenticated %}           
-			    {% include 'base/navbar.html' %}		            
-            {% endif %}
-        {% endblock %}
+        {% block navbar %}           
+			  
+        {% endblock %} 
     </header>
     <div class="container">
         {% block content %}
-        <h1>hola soy el base de la app de gestion de inventario</h1>
         {% endblock %}
-    </div>    
+    </div>     
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="{% static 'js/materialize.js'%}"></script>
     <script src="{% static 'js/main.js'%}"></script>

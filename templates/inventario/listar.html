@@ -2,6 +2,7 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+
 <h1>hola {{ user.username }}</h1>
 <a href="{% url 'logout' %}">Cerrar Sesion</a>
 
