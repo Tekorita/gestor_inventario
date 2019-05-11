@@ -7,3 +7,8 @@ class RegistroList(ListView):
     model = Registro
     template_name = 'registro/listar.html'
 
+class RegistroCreate(CreateView):
+    model = Registro
+    form_class = RegistroForm
+    template_name = 'registro/nuevo.html'
+    success_url = reverse_lazy('registro_listar')
