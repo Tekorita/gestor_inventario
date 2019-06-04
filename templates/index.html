@@ -1,7 +1,7 @@
 {% extends 'base/base.html' %}
 {% block content %}
 {% if form.errors %}
-<p>Tu nombre de correo o usuario y contraseña no coinciden. Inténtalo de nuevo.</p>
+<p>Tu nombre de correo o usuario y contraseña no coinciden. Inténtalo nuevamente.</p>
 {% endif %}
 <form method="post">
 	{% csrf_token %}	
