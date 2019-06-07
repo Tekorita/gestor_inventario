@@ -4,6 +4,6 @@
     {% csrf_token %}
     <h3>Seguro que deseas eliminar el insumo de nombre: {{ object.descripcion }}</h3>
     <button class="btn btn-danger" type="submit">Si, Eliminar</button>
-    <button class="btn btn-default" href="{% url 'inventario_listar' %}" >Cancelar</button>
+    <button class="btn btn-default" href="{% url 'inventario_listar' %}" >Cancelar accion</button>
 </form>
 {% endblock %}
