@@ -21,3 +21,22 @@ class PersonalForm(forms.ModelForm):
             'cargo': forms.TextInput(attrs={'class':'form-control'}),            
         }
 
+    class Meta:
+        model = Personal
+
+        fields = [
+            'nombre',
+            'apellido',
+            'cargo',
+        ]
+        fields = { 
+            'nombre': 'Nombre',
+            'apellido': 'Apellido',
+            'cargo': 'Cargo',
+        }
+        widgets = {
+            'nombre': forms.TextInput(attrs={'class':'form-control'}),
+            'apellido': forms.TextInput(attrs={'class':'form-control'}),
+            'cargo': forms.TextInput(attrs={'class':'form-control'}),            
+        }
+
