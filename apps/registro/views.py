@@ -23,3 +23,14 @@ class RegistroDelete(DeleteView):
     model = Personal
     template_name = 'personal/eliminar.html'
     success_url = reverse_lazy('personal_listar')
+
+class RegistroUpdate(UpdateView):
+    model = Registro
+    form_class = RegistroForm
+    template_name = 'registro/nuevo.html'
+    success_url = reverse_lazy('registro_listar')
+
+class RegistroDelete(DeleteView):
+    model = Personal
+    template_name = 'personal/eliminar.html'
+    success_url = reverse_lazy('personal_listar')
