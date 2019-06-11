@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse_lazy
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from apps.registro.models import Registro
 # Create your views here.
